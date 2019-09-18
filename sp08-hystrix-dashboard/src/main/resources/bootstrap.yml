@@ -1,0 +1,11 @@
+spring: 
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      name: user-service
+      profile: dev
+    inetutils:
+      ignored-interfaces:
+        - VM.*
